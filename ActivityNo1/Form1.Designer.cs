@@ -48,8 +48,8 @@
             pictureBox15 = new PictureBox();
             label1 = new Label();
             label2 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            itemnameTxtbox = new TextBox();
+            priceTxtbox = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -277,23 +277,23 @@
             label2.TabIndex = 18;
             label2.Text = "Price";
             // 
-            // textBox1
+            // itemnameTxtbox
             // 
-            textBox1.BackColor = Color.MistyRose;
-            textBox1.Location = new Point(95, 389);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(177, 23);
-            textBox1.TabIndex = 19;
-            textBox1.TextChanged += textBox1_TextChanged;
+            itemnameTxtbox.BackColor = Color.MistyRose;
+            itemnameTxtbox.Location = new Point(95, 389);
+            itemnameTxtbox.Name = "itemnameTxtbox";
+            itemnameTxtbox.Size = new Size(177, 23);
+            itemnameTxtbox.TabIndex = 19;
+            itemnameTxtbox.TextChanged += textBox1_TextChanged;
             // 
-            // textBox2
+            // priceTxtbox
             // 
-            textBox2.BackColor = Color.MistyRose;
-            textBox2.Location = new Point(317, 389);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(115, 23);
-            textBox2.TabIndex = 20;
-            textBox2.TextChanged += textBox2_TextChanged;
+            priceTxtbox.BackColor = Color.MistyRose;
+            priceTxtbox.Location = new Point(317, 389);
+            priceTxtbox.Name = "priceTxtbox";
+            priceTxtbox.Size = new Size(115, 23);
+            priceTxtbox.TabIndex = 20;
+            priceTxtbox.TextChanged += textBox2_TextChanged;
             // 
             // Form1
             // 
@@ -302,8 +302,8 @@
             BackColor = Color.LightSalmon;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(718, 429);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(priceTxtbox);
+            Controls.Add(itemnameTxtbox);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(pictureBox15);
@@ -365,7 +365,7 @@
         private PictureBox pictureBox15;
         private Label label1;
         private Label label2;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox itemnameTxtbox;
+        private TextBox priceTxtbox;
     }
 }
