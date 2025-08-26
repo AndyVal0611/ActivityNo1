@@ -116,6 +116,7 @@
             button6 = new Button();
             button5 = new Button();
             label3 = new Label();
+            label4 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox15).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
@@ -1109,6 +1110,17 @@
             label3.TabIndex = 82;
             label3.Text = "The";
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
+            label4.ForeColor = SystemColors.ButtonFace;
+            label4.Location = new Point(187, 61);
+            label4.Name = "label4";
+            label4.Size = new Size(138, 15);
+            label4.TabIndex = 83;
+            label4.Text = "Andrea Valdez | Cashier 3";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1116,6 +1128,7 @@
             BackColor = Color.Maroon;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(855, 547);
+            Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(groupBox4);
             Controls.Add(groupBox3);
@@ -1285,5 +1298,6 @@
         private Button button16;
         private Button button17;
         private Label label3;
+        private Label label4;
     }
 }
