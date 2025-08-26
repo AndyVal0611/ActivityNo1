@@ -69,17 +69,19 @@
             // 
             // New
             // 
+            New.BackColor = Color.PeachPuff;
             New.Font = new Font("Century", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             New.Location = new Point(470, 389);
             New.Name = "New";
             New.Size = new Size(94, 26);
             New.TabIndex = 0;
             New.Text = "New";
-            New.UseVisualStyleBackColor = true;
+            New.UseVisualStyleBackColor = false;
             New.Click += New_Click;
             // 
             // button2
             // 
+            button2.BackColor = Color.PeachPuff;
             button2.Font = new Font("Century Schoolbook", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button2.Location = new Point(589, 389);
             button2.Name = "button2";
@@ -87,11 +89,12 @@
             button2.TabIndex = 1;
             button2.TabStop = false;
             button2.Text = "Exit";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
             // pictureBox1
             // 
+            pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(26, 12);
             pictureBox1.Name = "pictureBox1";
@@ -103,6 +106,7 @@
             // 
             // pictureBox2
             // 
+            pictureBox2.BackColor = Color.Transparent;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(159, 12);
             pictureBox2.Name = "pictureBox2";
@@ -114,6 +118,7 @@
             // 
             // pictureBox3
             // 
+            pictureBox3.BackColor = Color.Transparent;
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
             pictureBox3.Location = new Point(298, 12);
             pictureBox3.Name = "pictureBox3";
@@ -125,6 +130,7 @@
             // 
             // pictureBox4
             // 
+            pictureBox4.BackColor = Color.Transparent;
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
             pictureBox4.Location = new Point(439, 12);
             pictureBox4.Name = "pictureBox4";
@@ -136,6 +142,7 @@
             // 
             // pictureBox5
             // 
+            pictureBox5.BackColor = Color.Transparent;
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
             pictureBox5.Location = new Point(576, 12);
             pictureBox5.Name = "pictureBox5";
@@ -147,6 +154,7 @@
             // 
             // pictureBox6
             // 
+            pictureBox6.BackColor = Color.Transparent;
             pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
             pictureBox6.Location = new Point(26, 135);
             pictureBox6.Name = "pictureBox6";
@@ -158,6 +166,7 @@
             // 
             // pictureBox7
             // 
+            pictureBox7.BackColor = Color.Transparent;
             pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
             pictureBox7.Location = new Point(159, 135);
             pictureBox7.Name = "pictureBox7";
@@ -169,6 +178,7 @@
             // 
             // pictureBox8
             // 
+            pictureBox8.BackColor = Color.Transparent;
             pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
             pictureBox8.Location = new Point(298, 135);
             pictureBox8.Name = "pictureBox8";
@@ -180,6 +190,7 @@
             // 
             // pictureBox9
             // 
+            pictureBox9.BackColor = Color.Transparent;
             pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
             pictureBox9.Location = new Point(439, 135);
             pictureBox9.Name = "pictureBox9";
@@ -191,6 +202,7 @@
             // 
             // pictureBox10
             // 
+            pictureBox10.BackColor = Color.Transparent;
             pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
             pictureBox10.Location = new Point(576, 135);
             pictureBox10.Name = "pictureBox10";
@@ -202,6 +214,7 @@
             // 
             // pictureBox11
             // 
+            pictureBox11.BackColor = Color.Transparent;
             pictureBox11.Image = (Image)resources.GetObject("pictureBox11.Image");
             pictureBox11.Location = new Point(26, 258);
             pictureBox11.Name = "pictureBox11";
@@ -213,6 +226,7 @@
             // 
             // pictureBox12
             // 
+            pictureBox12.BackColor = Color.Transparent;
             pictureBox12.Image = (Image)resources.GetObject("pictureBox12.Image");
             pictureBox12.Location = new Point(159, 258);
             pictureBox12.Name = "pictureBox12";
@@ -224,6 +238,7 @@
             // 
             // pictureBox13
             // 
+            pictureBox13.BackColor = Color.Transparent;
             pictureBox13.Image = (Image)resources.GetObject("pictureBox13.Image");
             pictureBox13.Location = new Point(298, 258);
             pictureBox13.Name = "pictureBox13";
@@ -235,6 +250,7 @@
             // 
             // pictureBox14
             // 
+            pictureBox14.BackColor = Color.Transparent;
             pictureBox14.Image = (Image)resources.GetObject("pictureBox14.Image");
             pictureBox14.Location = new Point(439, 258);
             pictureBox14.Name = "pictureBox14";
@@ -246,6 +262,7 @@
             // 
             // pictureBox15
             // 
+            pictureBox15.BackColor = Color.Transparent;
             pictureBox15.Image = (Image)resources.GetObject("pictureBox15.Image");
             pictureBox15.Location = new Point(576, 258);
             pictureBox15.Name = "pictureBox15";
@@ -325,6 +342,7 @@
             Controls.Add(New);
             Name = "Form1";
             Text = "Example1";
+            Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();

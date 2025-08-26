@@ -114,12 +114,12 @@ namespace ActivityNo1
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            // For ItemName Textbox
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-
+            // For Price Textbox
         }
 
         private void New_Click(object sender, EventArgs e)
@@ -133,6 +133,11 @@ namespace ActivityNo1
         {
             // Code for closing the execution of the Windows Form Application
             this.Close();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            MessageBox.Show("Welcome to The Cheesecake Factory!", "Good day!");
         }
     }
 }
