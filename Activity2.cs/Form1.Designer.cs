@@ -51,6 +51,10 @@
             pictureBox20 = new PictureBox();
             label2 = new Label();
             groupBox1 = new GroupBox();
+            radioButton4 = new RadioButton();
+            radioButton3 = new RadioButton();
+            radioButton2 = new RadioButton();
+            radioButton1 = new RadioButton();
             button4 = new Button();
             button3 = new Button();
             button2 = new Button();
@@ -58,13 +62,13 @@
             label27 = new Label();
             label26 = new Label();
             label25 = new Label();
-            discounted_totaltxtbox = new TextBox();
-            discount_totaltxtbox = new TextBox();
-            pricetextbox = new TextBox();
-            qty_totaltxtbox = new TextBox();
+            discounted_txtbox = new TextBox();
+            discount_txtbox = new TextBox();
+            priceTxtbox = new TextBox();
+            qty_txtbox = new TextBox();
             label24 = new Label();
             label23 = new Label();
-            itemnametxtbox = new TextBox();
+            itemnameTxtbox = new TextBox();
             label1 = new Label();
             groupBox2 = new GroupBox();
             label28 = new Label();
@@ -147,7 +151,7 @@
             // 
             pictureBox15.BackColor = Color.Transparent;
             pictureBox15.Image = (Image)resources.GetObject("pictureBox15.Image");
-            pictureBox15.Location = new Point(754, 296);
+            pictureBox15.Location = new Point(855, 296);
             pictureBox15.Name = "pictureBox15";
             pictureBox15.Size = new Size(87, 84);
             pictureBox15.SizeMode = PictureBoxSizeMode.Zoom;
@@ -158,7 +162,7 @@
             // 
             pictureBox14.BackColor = Color.Transparent;
             pictureBox14.Image = (Image)resources.GetObject("pictureBox14.Image");
-            pictureBox14.Location = new Point(651, 296);
+            pictureBox14.Location = new Point(752, 296);
             pictureBox14.Name = "pictureBox14";
             pictureBox14.Size = new Size(86, 84);
             pictureBox14.SizeMode = PictureBoxSizeMode.Zoom;
@@ -169,7 +173,7 @@
             // 
             pictureBox13.BackColor = Color.Transparent;
             pictureBox13.Image = (Image)resources.GetObject("pictureBox13.Image");
-            pictureBox13.Location = new Point(546, 296);
+            pictureBox13.Location = new Point(647, 296);
             pictureBox13.Name = "pictureBox13";
             pictureBox13.Size = new Size(86, 84);
             pictureBox13.SizeMode = PictureBoxSizeMode.Zoom;
@@ -180,7 +184,7 @@
             // 
             pictureBox12.BackColor = Color.Transparent;
             pictureBox12.Image = (Image)resources.GetObject("pictureBox12.Image");
-            pictureBox12.Location = new Point(442, 296);
+            pictureBox12.Location = new Point(543, 296);
             pictureBox12.Name = "pictureBox12";
             pictureBox12.Size = new Size(86, 84);
             pictureBox12.SizeMode = PictureBoxSizeMode.Zoom;
@@ -191,7 +195,7 @@
             // 
             pictureBox11.BackColor = Color.Transparent;
             pictureBox11.Image = (Image)resources.GetObject("pictureBox11.Image");
-            pictureBox11.Location = new Point(338, 296);
+            pictureBox11.Location = new Point(439, 296);
             pictureBox11.Name = "pictureBox11";
             pictureBox11.Size = new Size(83, 84);
             pictureBox11.SizeMode = PictureBoxSizeMode.Zoom;
@@ -202,7 +206,7 @@
             // 
             pictureBox10.BackColor = Color.Transparent;
             pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
-            pictureBox10.Location = new Point(754, 185);
+            pictureBox10.Location = new Point(855, 185);
             pictureBox10.Name = "pictureBox10";
             pictureBox10.Size = new Size(87, 83);
             pictureBox10.SizeMode = PictureBoxSizeMode.Zoom;
@@ -213,7 +217,7 @@
             // 
             pictureBox9.BackColor = Color.Transparent;
             pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
-            pictureBox9.Location = new Point(651, 185);
+            pictureBox9.Location = new Point(752, 185);
             pictureBox9.Name = "pictureBox9";
             pictureBox9.Size = new Size(86, 83);
             pictureBox9.SizeMode = PictureBoxSizeMode.Zoom;
@@ -224,7 +228,7 @@
             // 
             pictureBox8.BackColor = Color.Transparent;
             pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
-            pictureBox8.Location = new Point(546, 185);
+            pictureBox8.Location = new Point(647, 185);
             pictureBox8.Name = "pictureBox8";
             pictureBox8.Size = new Size(86, 83);
             pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
@@ -235,7 +239,7 @@
             // 
             pictureBox7.BackColor = Color.Transparent;
             pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new Point(442, 185);
+            pictureBox7.Location = new Point(543, 185);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(85, 83);
             pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
@@ -246,7 +250,7 @@
             // 
             pictureBox6.BackColor = Color.Transparent;
             pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(338, 185);
+            pictureBox6.Location = new Point(439, 185);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(83, 83);
             pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
@@ -257,7 +261,7 @@
             // 
             pictureBox5.BackColor = Color.Transparent;
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(754, 77);
+            pictureBox5.Location = new Point(855, 77);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(87, 83);
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
@@ -268,7 +272,7 @@
             // 
             pictureBox4.BackColor = Color.Transparent;
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(651, 77);
+            pictureBox4.Location = new Point(752, 77);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(86, 83);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
@@ -279,7 +283,7 @@
             // 
             pictureBox3.BackColor = Color.Transparent;
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(546, 77);
+            pictureBox3.Location = new Point(647, 77);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(86, 83);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
@@ -290,7 +294,7 @@
             // 
             pictureBox2.BackColor = Color.Transparent;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(442, 77);
+            pictureBox2.Location = new Point(543, 77);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(85, 83);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -301,7 +305,7 @@
             // 
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(338, 77);
+            pictureBox1.Location = new Point(439, 77);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(83, 83);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -311,7 +315,7 @@
             // pictureBox16
             // 
             pictureBox16.BackColor = Color.Transparent;
-            pictureBox16.Location = new Point(338, 406);
+            pictureBox16.Location = new Point(439, 406);
             pictureBox16.Name = "pictureBox16";
             pictureBox16.Size = new Size(83, 84);
             pictureBox16.SizeMode = PictureBoxSizeMode.Zoom;
@@ -321,7 +325,7 @@
             // pictureBox17
             // 
             pictureBox17.BackColor = Color.Transparent;
-            pictureBox17.Location = new Point(445, 406);
+            pictureBox17.Location = new Point(546, 406);
             pictureBox17.Name = "pictureBox17";
             pictureBox17.Size = new Size(83, 84);
             pictureBox17.SizeMode = PictureBoxSizeMode.Zoom;
@@ -331,7 +335,7 @@
             // pictureBox18
             // 
             pictureBox18.BackColor = Color.Transparent;
-            pictureBox18.Location = new Point(549, 406);
+            pictureBox18.Location = new Point(650, 406);
             pictureBox18.Name = "pictureBox18";
             pictureBox18.Size = new Size(83, 84);
             pictureBox18.SizeMode = PictureBoxSizeMode.Zoom;
@@ -341,7 +345,7 @@
             // pictureBox19
             // 
             pictureBox19.BackColor = Color.Transparent;
-            pictureBox19.Location = new Point(651, 406);
+            pictureBox19.Location = new Point(752, 406);
             pictureBox19.Name = "pictureBox19";
             pictureBox19.Size = new Size(83, 84);
             pictureBox19.SizeMode = PictureBoxSizeMode.Zoom;
@@ -351,7 +355,7 @@
             // pictureBox20
             // 
             pictureBox20.BackColor = Color.Transparent;
-            pictureBox20.Location = new Point(758, 406);
+            pictureBox20.Location = new Point(859, 406);
             pictureBox20.Name = "pictureBox20";
             pictureBox20.Size = new Size(83, 84);
             pictureBox20.SizeMode = PictureBoxSizeMode.Zoom;
@@ -373,6 +377,10 @@
             // groupBox1
             // 
             groupBox1.BackColor = Color.Transparent;
+            groupBox1.Controls.Add(radioButton4);
+            groupBox1.Controls.Add(radioButton3);
+            groupBox1.Controls.Add(radioButton2);
+            groupBox1.Controls.Add(radioButton1);
             groupBox1.Controls.Add(button4);
             groupBox1.Controls.Add(button3);
             groupBox1.Controls.Add(button2);
@@ -380,37 +388,94 @@
             groupBox1.Controls.Add(label27);
             groupBox1.Controls.Add(label26);
             groupBox1.Controls.Add(label25);
-            groupBox1.Controls.Add(discounted_totaltxtbox);
-            groupBox1.Controls.Add(discount_totaltxtbox);
-            groupBox1.Controls.Add(pricetextbox);
-            groupBox1.Controls.Add(qty_totaltxtbox);
+            groupBox1.Controls.Add(discounted_txtbox);
+            groupBox1.Controls.Add(discount_txtbox);
+            groupBox1.Controls.Add(priceTxtbox);
+            groupBox1.Controls.Add(qty_txtbox);
             groupBox1.Controls.Add(label24);
             groupBox1.Controls.Add(label23);
-            groupBox1.Controls.Add(itemnametxtbox);
+            groupBox1.Controls.Add(itemnameTxtbox);
             groupBox1.Location = new Point(12, 63);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(310, 145);
+            groupBox1.Size = new Size(409, 145);
             groupBox1.TabIndex = 39;
             groupBox1.TabStop = false;
+            // 
+            // radioButton4
+            // 
+            radioButton4.AutoSize = true;
+            radioButton4.Font = new Font("Garamond", 8.25F, FontStyle.Bold);
+            radioButton4.ForeColor = SystemColors.ButtonHighlight;
+            radioButton4.Location = new Point(210, 117);
+            radioButton4.Name = "radioButton4";
+            radioButton4.Size = new Size(84, 16);
+            radioButton4.TabIndex = 77;
+            radioButton4.TabStop = true;
+            radioButton4.Text = "No Discount";
+            radioButton4.UseVisualStyleBackColor = true;
+            radioButton4.CheckedChanged += radioButton4_CheckedChanged;
+            // 
+            // radioButton3
+            // 
+            radioButton3.AutoSize = true;
+            radioButton3.Font = new Font("Garamond", 8.25F, FontStyle.Bold);
+            radioButton3.ForeColor = SystemColors.ButtonHighlight;
+            radioButton3.Location = new Point(210, 92);
+            radioButton3.Name = "radioButton3";
+            radioButton3.Size = new Size(95, 16);
+            radioButton3.TabIndex = 76;
+            radioButton3.TabStop = true;
+            radioButton3.Text = "Employee Disc";
+            radioButton3.UseVisualStyleBackColor = true;
+            radioButton3.CheckedChanged += radioButton3_CheckedChanged;
+            // 
+            // radioButton2
+            // 
+            radioButton2.AutoSize = true;
+            radioButton2.Font = new Font("Garamond", 8.25F, FontStyle.Bold);
+            radioButton2.ForeColor = SystemColors.ButtonHighlight;
+            radioButton2.Location = new Point(210, 67);
+            radioButton2.Name = "radioButton2";
+            radioButton2.Size = new Size(104, 16);
+            radioButton2.TabIndex = 75;
+            radioButton2.TabStop = true;
+            radioButton2.Text = "With Disc. Count";
+            radioButton2.UseVisualStyleBackColor = true;
+            radioButton2.CheckedChanged += radioButton2_CheckedChanged;
+            // 
+            // radioButton1
+            // 
+            radioButton1.AutoSize = true;
+            radioButton1.Font = new Font("Garamond", 8.25F, FontStyle.Bold);
+            radioButton1.ForeColor = SystemColors.ButtonHighlight;
+            radioButton1.Location = new Point(210, 41);
+            radioButton1.Name = "radioButton1";
+            radioButton1.Size = new Size(88, 16);
+            radioButton1.TabIndex = 74;
+            radioButton1.TabStop = true;
+            radioButton1.Text = "Senior Citizen";
+            radioButton1.UseVisualStyleBackColor = true;
+            radioButton1.CheckedChanged += radioButton1_CheckedChanged;
             // 
             // button4
             // 
             button4.BackColor = Color.Salmon;
             button4.Font = new Font("Calibri", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button4.Location = new Point(211, 114);
+            button4.Location = new Point(320, 114);
             button4.Name = "button4";
-            button4.Size = new Size(93, 20);
+            button4.Size = new Size(84, 20);
             button4.TabIndex = 73;
             button4.Text = "EXIT";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // button3
             // 
             button3.BackColor = Color.Salmon;
             button3.Font = new Font("Calibri", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.Location = new Point(211, 90);
+            button3.Location = new Point(320, 90);
             button3.Name = "button3";
-            button3.Size = new Size(93, 20);
+            button3.Size = new Size(84, 20);
             button3.TabIndex = 72;
             button3.Text = "CANCEL";
             button3.UseVisualStyleBackColor = false;
@@ -419,23 +484,25 @@
             // 
             button2.BackColor = Color.Salmon;
             button2.Font = new Font("Calibri", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(210, 64);
+            button2.Location = new Point(320, 64);
             button2.Name = "button2";
-            button2.Size = new Size(93, 20);
+            button2.Size = new Size(83, 20);
             button2.TabIndex = 71;
             button2.Text = "NEW";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // button1
             // 
             button1.BackColor = Color.Salmon;
             button1.Font = new Font("Calibri", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(210, 38);
+            button1.Location = new Point(320, 38);
             button1.Name = "button1";
-            button1.Size = new Size(93, 20);
+            button1.Size = new Size(83, 20);
             button1.TabIndex = 70;
             button1.Text = "CALCULATE";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // label27
             // 
@@ -470,37 +537,37 @@
             label25.TabIndex = 67;
             label25.Text = "Price";
             // 
-            // discounted_totaltxtbox
+            // discounted_txtbox
             // 
-            discounted_totaltxtbox.Font = new Font("Garamond", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            discounted_totaltxtbox.Location = new Point(109, 114);
-            discounted_totaltxtbox.Name = "discounted_totaltxtbox";
-            discounted_totaltxtbox.Size = new Size(94, 20);
-            discounted_totaltxtbox.TabIndex = 66;
+            discounted_txtbox.Font = new Font("Garamond", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            discounted_txtbox.Location = new Point(109, 114);
+            discounted_txtbox.Name = "discounted_txtbox";
+            discounted_txtbox.Size = new Size(94, 20);
+            discounted_txtbox.TabIndex = 66;
             // 
-            // discount_totaltxtbox
+            // discount_txtbox
             // 
-            discount_totaltxtbox.Font = new Font("Garamond", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            discount_totaltxtbox.Location = new Point(109, 90);
-            discount_totaltxtbox.Name = "discount_totaltxtbox";
-            discount_totaltxtbox.Size = new Size(94, 20);
-            discount_totaltxtbox.TabIndex = 65;
+            discount_txtbox.Font = new Font("Garamond", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            discount_txtbox.Location = new Point(109, 90);
+            discount_txtbox.Name = "discount_txtbox";
+            discount_txtbox.Size = new Size(94, 20);
+            discount_txtbox.TabIndex = 65;
             // 
-            // pricetextbox
+            // priceTxtbox
             // 
-            pricetextbox.Font = new Font("Garamond", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            pricetextbox.Location = new Point(109, 64);
-            pricetextbox.Name = "pricetextbox";
-            pricetextbox.Size = new Size(94, 20);
-            pricetextbox.TabIndex = 64;
+            priceTxtbox.Font = new Font("Garamond", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            priceTxtbox.Location = new Point(109, 64);
+            priceTxtbox.Name = "priceTxtbox";
+            priceTxtbox.Size = new Size(94, 20);
+            priceTxtbox.TabIndex = 64;
             // 
-            // qty_totaltxtbox
+            // qty_txtbox
             // 
-            qty_totaltxtbox.Font = new Font("Garamond", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            qty_totaltxtbox.Location = new Point(109, 38);
-            qty_totaltxtbox.Name = "qty_totaltxtbox";
-            qty_totaltxtbox.Size = new Size(94, 20);
-            qty_totaltxtbox.TabIndex = 63;
+            qty_txtbox.Font = new Font("Garamond", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            qty_txtbox.Location = new Point(109, 38);
+            qty_txtbox.Name = "qty_txtbox";
+            qty_txtbox.Size = new Size(94, 20);
+            qty_txtbox.TabIndex = 63;
             // 
             // label24
             // 
@@ -524,13 +591,13 @@
             label23.TabIndex = 61;
             label23.Text = "Name of an item";
             // 
-            // itemnametxtbox
+            // itemnameTxtbox
             // 
-            itemnametxtbox.Font = new Font("Garamond", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            itemnametxtbox.Location = new Point(109, 14);
-            itemnametxtbox.Name = "itemnametxtbox";
-            itemnametxtbox.Size = new Size(195, 20);
-            itemnametxtbox.TabIndex = 40;
+            itemnameTxtbox.Font = new Font("Garamond", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            itemnameTxtbox.Location = new Point(109, 14);
+            itemnameTxtbox.Name = "itemnameTxtbox";
+            itemnameTxtbox.Size = new Size(294, 20);
+            itemnameTxtbox.TabIndex = 40;
             // 
             // label1
             // 
@@ -538,7 +605,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Trebuchet MS", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.ButtonHighlight;
-            label1.Location = new Point(338, 50);
+            label1.Location = new Point(439, 50);
             label1.Name = "label1";
             label1.Size = new Size(62, 24);
             label1.TabIndex = 37;
@@ -557,7 +624,7 @@
             groupBox2.ForeColor = SystemColors.ButtonFace;
             groupBox2.Location = new Point(12, 214);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(310, 90);
+            groupBox2.Size = new Size(409, 90);
             groupBox2.TabIndex = 40;
             groupBox2.TabStop = false;
             groupBox2.Text = "Summary";
@@ -578,7 +645,7 @@
             totaldiscg_txtbox.Font = new Font("Garamond", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             totaldiscg_txtbox.Location = new Point(135, 38);
             totaldiscg_txtbox.Name = "totaldiscg_txtbox";
-            totaldiscg_txtbox.Size = new Size(168, 20);
+            totaldiscg_txtbox.Size = new Size(268, 20);
             totaldiscg_txtbox.TabIndex = 77;
             // 
             // totaldiscamt_txtbox
@@ -586,7 +653,7 @@
             totaldiscamt_txtbox.Font = new Font("Garamond", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             totaldiscamt_txtbox.Location = new Point(156, 64);
             totaldiscamt_txtbox.Name = "totaldiscamt_txtbox";
-            totaldiscamt_txtbox.Size = new Size(148, 20);
+            totaldiscamt_txtbox.Size = new Size(248, 20);
             totaldiscamt_txtbox.TabIndex = 78;
             // 
             // totalqty_txtbox
@@ -594,7 +661,7 @@
             totalqty_txtbox.Font = new Font("Garamond", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             totalqty_txtbox.Location = new Point(109, 14);
             totalqty_txtbox.Name = "totalqty_txtbox";
-            totalqty_txtbox.Size = new Size(195, 20);
+            totalqty_txtbox.Size = new Size(295, 20);
             totalqty_txtbox.TabIndex = 74;
             // 
             // label30
@@ -625,7 +692,7 @@
             name1lbl.BackColor = Color.Transparent;
             name1lbl.Font = new Font("Garamond", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             name1lbl.ForeColor = SystemColors.ButtonHighlight;
-            name1lbl.Location = new Point(338, 163);
+            name1lbl.Location = new Point(439, 163);
             name1lbl.Name = "name1lbl";
             name1lbl.Size = new Size(31, 12);
             name1lbl.TabIndex = 41;
@@ -637,7 +704,7 @@
             name2lbl.BackColor = Color.Transparent;
             name2lbl.Font = new Font("Garamond", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             name2lbl.ForeColor = SystemColors.ButtonHighlight;
-            name2lbl.Location = new Point(442, 163);
+            name2lbl.Location = new Point(543, 163);
             name2lbl.Name = "name2lbl";
             name2lbl.Size = new Size(31, 12);
             name2lbl.TabIndex = 42;
@@ -649,7 +716,7 @@
             name3lbl.BackColor = Color.Transparent;
             name3lbl.Font = new Font("Garamond", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             name3lbl.ForeColor = SystemColors.ButtonHighlight;
-            name3lbl.Location = new Point(546, 163);
+            name3lbl.Location = new Point(647, 163);
             name3lbl.Name = "name3lbl";
             name3lbl.Size = new Size(31, 12);
             name3lbl.TabIndex = 43;
@@ -661,7 +728,7 @@
             name4lbl.BackColor = Color.Transparent;
             name4lbl.Font = new Font("Garamond", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             name4lbl.ForeColor = SystemColors.ButtonHighlight;
-            name4lbl.Location = new Point(651, 163);
+            name4lbl.Location = new Point(752, 163);
             name4lbl.Name = "name4lbl";
             name4lbl.Size = new Size(31, 12);
             name4lbl.TabIndex = 44;
@@ -673,7 +740,7 @@
             name5lbl.BackColor = Color.Transparent;
             name5lbl.Font = new Font("Garamond", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             name5lbl.ForeColor = SystemColors.ButtonHighlight;
-            name5lbl.Location = new Point(754, 163);
+            name5lbl.Location = new Point(855, 163);
             name5lbl.Name = "name5lbl";
             name5lbl.Size = new Size(31, 12);
             name5lbl.TabIndex = 45;
@@ -685,7 +752,7 @@
             name6lbl.BackColor = Color.Transparent;
             name6lbl.Font = new Font("Garamond", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             name6lbl.ForeColor = SystemColors.ButtonHighlight;
-            name6lbl.Location = new Point(338, 271);
+            name6lbl.Location = new Point(439, 271);
             name6lbl.Name = "name6lbl";
             name6lbl.Size = new Size(31, 12);
             name6lbl.TabIndex = 46;
@@ -697,7 +764,7 @@
             name7lbl.BackColor = Color.Transparent;
             name7lbl.Font = new Font("Garamond", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             name7lbl.ForeColor = SystemColors.ButtonHighlight;
-            name7lbl.Location = new Point(442, 271);
+            name7lbl.Location = new Point(543, 271);
             name7lbl.Name = "name7lbl";
             name7lbl.Size = new Size(31, 12);
             name7lbl.TabIndex = 47;
@@ -709,7 +776,7 @@
             name8lbl.BackColor = Color.Transparent;
             name8lbl.Font = new Font("Garamond", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             name8lbl.ForeColor = SystemColors.ButtonHighlight;
-            name8lbl.Location = new Point(546, 271);
+            name8lbl.Location = new Point(647, 271);
             name8lbl.Name = "name8lbl";
             name8lbl.Size = new Size(31, 12);
             name8lbl.TabIndex = 48;
@@ -721,7 +788,7 @@
             name9lbl.BackColor = Color.Transparent;
             name9lbl.Font = new Font("Garamond", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             name9lbl.ForeColor = SystemColors.ButtonHighlight;
-            name9lbl.Location = new Point(651, 271);
+            name9lbl.Location = new Point(752, 271);
             name9lbl.Name = "name9lbl";
             name9lbl.Size = new Size(31, 12);
             name9lbl.TabIndex = 49;
@@ -733,7 +800,7 @@
             name10lbl.BackColor = Color.Transparent;
             name10lbl.Font = new Font("Garamond", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             name10lbl.ForeColor = SystemColors.ButtonHighlight;
-            name10lbl.Location = new Point(754, 271);
+            name10lbl.Location = new Point(855, 271);
             name10lbl.Name = "name10lbl";
             name10lbl.Size = new Size(31, 12);
             name10lbl.TabIndex = 50;
@@ -745,7 +812,7 @@
             label13.BackColor = Color.Transparent;
             label13.Font = new Font("Garamond", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label13.ForeColor = SystemColors.ButtonHighlight;
-            label13.Location = new Point(338, 383);
+            label13.Location = new Point(439, 383);
             label13.Name = "label13";
             label13.Size = new Size(88, 12);
             label13.TabIndex = 51;
@@ -757,7 +824,7 @@
             label14.BackColor = Color.Transparent;
             label14.Font = new Font("Garamond", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label14.ForeColor = SystemColors.ButtonHighlight;
-            label14.Location = new Point(442, 383);
+            label14.Location = new Point(543, 383);
             label14.Name = "label14";
             label14.Size = new Size(85, 12);
             label14.TabIndex = 52;
@@ -769,7 +836,7 @@
             label15.BackColor = Color.Transparent;
             label15.Font = new Font("Garamond", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label15.ForeColor = SystemColors.ButtonHighlight;
-            label15.Location = new Point(546, 383);
+            label15.Location = new Point(647, 383);
             label15.Name = "label15";
             label15.Size = new Size(70, 12);
             label15.TabIndex = 53;
@@ -781,7 +848,7 @@
             label16.BackColor = Color.Transparent;
             label16.Font = new Font("Garamond", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label16.ForeColor = SystemColors.ButtonHighlight;
-            label16.Location = new Point(651, 383);
+            label16.Location = new Point(752, 383);
             label16.Name = "label16";
             label16.Size = new Size(70, 12);
             label16.TabIndex = 54;
@@ -793,7 +860,7 @@
             label17.BackColor = Color.Transparent;
             label17.Font = new Font("Garamond", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label17.ForeColor = SystemColors.ButtonHighlight;
-            label17.Location = new Point(754, 383);
+            label17.Location = new Point(855, 383);
             label17.Name = "label17";
             label17.Size = new Size(72, 12);
             label17.TabIndex = 55;
@@ -805,7 +872,7 @@
             label18.BackColor = Color.Transparent;
             label18.Font = new Font("Garamond", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label18.ForeColor = SystemColors.ButtonHighlight;
-            label18.Location = new Point(338, 493);
+            label18.Location = new Point(439, 493);
             label18.Name = "label18";
             label18.Size = new Size(43, 12);
             label18.TabIndex = 56;
@@ -817,7 +884,7 @@
             label19.BackColor = Color.Transparent;
             label19.Font = new Font("Garamond", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label19.ForeColor = SystemColors.ButtonHighlight;
-            label19.Location = new Point(442, 493);
+            label19.Location = new Point(543, 493);
             label19.Name = "label19";
             label19.Size = new Size(77, 12);
             label19.TabIndex = 57;
@@ -829,7 +896,7 @@
             label20.BackColor = Color.Transparent;
             label20.Font = new Font("Garamond", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label20.ForeColor = SystemColors.ButtonHighlight;
-            label20.Location = new Point(549, 493);
+            label20.Location = new Point(650, 493);
             label20.Name = "label20";
             label20.Size = new Size(31, 12);
             label20.TabIndex = 58;
@@ -841,7 +908,7 @@
             label21.BackColor = Color.Transparent;
             label21.Font = new Font("Garamond", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label21.ForeColor = SystemColors.ButtonHighlight;
-            label21.Location = new Point(651, 493);
+            label21.Location = new Point(752, 493);
             label21.Name = "label21";
             label21.Size = new Size(63, 12);
             label21.TabIndex = 59;
@@ -853,7 +920,7 @@
             label22.BackColor = Color.Transparent;
             label22.Font = new Font("Garamond", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label22.ForeColor = SystemColors.ButtonHighlight;
-            label22.Location = new Point(758, 493);
+            label22.Location = new Point(859, 493);
             label22.Name = "label22";
             label22.Size = new Size(72, 12);
             label22.TabIndex = 60;
@@ -870,16 +937,16 @@
             groupBox3.ForeColor = SystemColors.ButtonFace;
             groupBox3.Location = new Point(12, 310);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(310, 94);
+            groupBox3.Size = new Size(409, 94);
             groupBox3.TabIndex = 80;
             groupBox3.TabStop = false;
             // 
             // changetxtbox
             // 
             changetxtbox.Font = new Font("Calibri", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            changetxtbox.Location = new Point(160, 41);
+            changetxtbox.Location = new Point(201, 41);
             changetxtbox.Name = "changetxtbox";
-            changetxtbox.Size = new Size(144, 43);
+            changetxtbox.Size = new Size(202, 43);
             changetxtbox.TabIndex = 80;
             // 
             // label31
@@ -887,7 +954,7 @@
             label31.AutoSize = true;
             label31.Font = new Font("Garamond", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label31.ForeColor = SystemColors.ButtonHighlight;
-            label31.Location = new Point(169, 17);
+            label31.Location = new Point(201, 17);
             label31.Name = "label31";
             label31.Size = new Size(67, 21);
             label31.TabIndex = 79;
@@ -898,7 +965,7 @@
             cashrendered_txtbox.Font = new Font("Calibri", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cashrendered_txtbox.Location = new Point(6, 41);
             cashrendered_txtbox.Name = "cashrendered_txtbox";
-            cashrendered_txtbox.Size = new Size(144, 43);
+            cashrendered_txtbox.Size = new Size(189, 43);
             cashrendered_txtbox.TabIndex = 77;
             // 
             // label33
@@ -931,7 +998,7 @@
             groupBox4.Controls.Add(button7);
             groupBox4.Controls.Add(button6);
             groupBox4.Controls.Add(button5);
-            groupBox4.Location = new Point(11, 410);
+            groupBox4.Location = new Point(63, 410);
             groupBox4.Name = "groupBox4";
             groupBox4.Size = new Size(311, 127);
             groupBox4.TabIndex = 81;
@@ -1115,7 +1182,7 @@
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
             label4.ForeColor = SystemColors.ButtonFace;
-            label4.Location = new Point(187, 61);
+            label4.Location = new Point(263, 57);
             label4.Name = "label4";
             label4.Size = new Size(138, 15);
             label4.TabIndex = 83;
@@ -1127,7 +1194,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Maroon;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(855, 547);
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(954, 547);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(groupBox4);
@@ -1178,6 +1246,7 @@
             Controls.Add(pictureBox1);
             Name = "Form1";
             Text = "Activity 2";
+            Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox15).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
@@ -1234,7 +1303,7 @@
         private Label label2;
         private GroupBox groupBox1;
         private Label label1;
-        private TextBox itemnametxtbox;
+        private TextBox itemnameTxtbox;
         private GroupBox groupBox2;
         private Label name1lbl;
         private Label name2lbl;
@@ -1250,7 +1319,7 @@
         private Label label14;
         private Label label15;
         private Label label16;
-        private TextBox qty_totaltxtbox;
+        private TextBox qty_txtbox;
         private Label label24;
         private Label label23;
         private Label label17;
@@ -1266,9 +1335,9 @@
         private Label label27;
         private Label label26;
         private Label label25;
-        private TextBox discounted_totaltxtbox;
-        private TextBox discount_totaltxtbox;
-        private TextBox pricetextbox;
+        private TextBox discounted_txtbox;
+        private TextBox discount_txtbox;
+        private TextBox priceTxtbox;
         private Label label28;
         private TextBox totaldiscg_txtbox;
         private TextBox totaldiscamt_txtbox;
@@ -1299,5 +1368,9 @@
         private Button button17;
         private Label label3;
         private Label label4;
+        private RadioButton radioButton4;
+        private RadioButton radioButton3;
+        private RadioButton radioButton2;
+        private RadioButton radioButton1;
     }
 }

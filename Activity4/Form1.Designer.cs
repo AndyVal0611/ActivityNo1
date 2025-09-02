@@ -91,24 +91,24 @@
             label28 = new Label();
             label29 = new Label();
             label30 = new Label();
-            totalTuitionFee = new TextBox();
             label31 = new Label();
-            totalMisc = new TextBox();
-            totalTuition = new TextBox();
-            totalNum = new TextBox();
             label32 = new Label();
             label33 = new Label();
             label34 = new Label();
             label35 = new Label();
-            examBookletTextBox = new TextBox();
-            ciscoLabFee2TextBox = new TextBox();
-            computerLabFeeTextBox = new TextBox();
             label36 = new Label();
             label37 = new Label();
             label38 = new Label();
             label39 = new Label();
-            totalOtherSchoolFeesTextBox = new TextBox();
             label40 = new Label();
+            listBox2 = new ListBox();
+            listBox3 = new ListBox();
+            listBox4 = new ListBox();
+            listBox5 = new ListBox();
+            listBox6 = new ListBox();
+            listBox7 = new ListBox();
+            listBox8 = new ListBox();
+            listBox9 = new ListBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -674,14 +674,6 @@
             label30.TabIndex = 62;
             label30.Text = "Day";
             // 
-            // totalTuitionFee
-            // 
-            totalTuitionFee.Font = new Font("Candara", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            totalTuitionFee.Location = new Point(493, 549);
-            totalTuitionFee.Name = "totalTuitionFee";
-            totalTuitionFee.Size = new Size(134, 21);
-            totalTuitionFee.TabIndex = 70;
-            // 
             // label31
             // 
             label31.AutoSize = true;
@@ -690,30 +682,6 @@
             label31.Size = new Size(120, 14);
             label31.TabIndex = 69;
             label31.Text = "Total Tuition and Fees";
-            // 
-            // totalMisc
-            // 
-            totalMisc.Font = new Font("Candara", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            totalMisc.Location = new Point(158, 550);
-            totalMisc.Name = "totalMisc";
-            totalMisc.Size = new Size(129, 21);
-            totalMisc.TabIndex = 68;
-            // 
-            // totalTuition
-            // 
-            totalTuition.Font = new Font("Candara", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            totalTuition.Location = new Point(158, 523);
-            totalTuition.Name = "totalTuition";
-            totalTuition.Size = new Size(129, 21);
-            totalTuition.TabIndex = 67;
-            // 
-            // totalNum
-            // 
-            totalNum.Font = new Font("Candara", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            totalNum.Location = new Point(493, 522);
-            totalNum.Name = "totalNum";
-            totalNum.Size = new Size(134, 21);
-            totalNum.TabIndex = 66;
             // 
             // label32
             // 
@@ -751,30 +719,6 @@
             label35.TabIndex = 71;
             label35.Text = "Other School Fees";
             // 
-            // examBookletTextBox
-            // 
-            examBookletTextBox.Font = new Font("Candara", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            examBookletTextBox.Location = new Point(178, 668);
-            examBookletTextBox.Name = "examBookletTextBox";
-            examBookletTextBox.Size = new Size(179, 21);
-            examBookletTextBox.TabIndex = 78;
-            // 
-            // ciscoLabFee2TextBox
-            // 
-            ciscoLabFee2TextBox.Font = new Font("Candara", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ciscoLabFee2TextBox.Location = new Point(178, 642);
-            ciscoLabFee2TextBox.Name = "ciscoLabFee2TextBox";
-            ciscoLabFee2TextBox.Size = new Size(179, 21);
-            ciscoLabFee2TextBox.TabIndex = 77;
-            // 
-            // computerLabFeeTextBox
-            // 
-            computerLabFeeTextBox.Font = new Font("Candara", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            computerLabFeeTextBox.Location = new Point(178, 616);
-            computerLabFeeTextBox.Name = "computerLabFeeTextBox";
-            computerLabFeeTextBox.Size = new Size(179, 21);
-            computerLabFeeTextBox.TabIndex = 76;
-            // 
             // label36
             // 
             label36.AutoSize = true;
@@ -810,14 +754,6 @@
             label39.TabIndex = 72;
             label39.Text = "Computer Laboratory Fee";
             // 
-            // totalOtherSchoolFeesTextBox
-            // 
-            totalOtherSchoolFeesTextBox.Font = new Font("Candara", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            totalOtherSchoolFeesTextBox.Location = new Point(408, 642);
-            totalOtherSchoolFeesTextBox.Name = "totalOtherSchoolFeesTextBox";
-            totalOtherSchoolFeesTextBox.Size = new Size(179, 21);
-            totalOtherSchoolFeesTextBox.TabIndex = 79;
-            // 
             // label40
             // 
             label40.AutoSize = true;
@@ -827,27 +763,107 @@
             label40.TabIndex = 80;
             label40.Text = "Total Other School Fees";
             // 
+            // listBox2
+            // 
+            listBox2.Font = new Font("Candara", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            listBox2.FormattingEnabled = true;
+            listBox2.ItemHeight = 13;
+            listBox2.Location = new Point(157, 526);
+            listBox2.Name = "listBox2";
+            listBox2.Size = new Size(130, 17);
+            listBox2.TabIndex = 81;
+            // 
+            // listBox3
+            // 
+            listBox3.Font = new Font("Candara", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            listBox3.FormattingEnabled = true;
+            listBox3.ItemHeight = 13;
+            listBox3.Location = new Point(157, 549);
+            listBox3.Name = "listBox3";
+            listBox3.Size = new Size(130, 17);
+            listBox3.TabIndex = 82;
+            // 
+            // listBox4
+            // 
+            listBox4.Font = new Font("Candara", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            listBox4.FormattingEnabled = true;
+            listBox4.ItemHeight = 13;
+            listBox4.Location = new Point(457, 549);
+            listBox4.Name = "listBox4";
+            listBox4.Size = new Size(130, 17);
+            listBox4.TabIndex = 84;
+            // 
+            // listBox5
+            // 
+            listBox5.Font = new Font("Candara", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            listBox5.FormattingEnabled = true;
+            listBox5.ItemHeight = 13;
+            listBox5.Location = new Point(457, 526);
+            listBox5.Name = "listBox5";
+            listBox5.Size = new Size(130, 17);
+            listBox5.TabIndex = 83;
+            // 
+            // listBox6
+            // 
+            listBox6.Font = new Font("Candara", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            listBox6.FormattingEnabled = true;
+            listBox6.ItemHeight = 13;
+            listBox6.Location = new Point(183, 617);
+            listBox6.Name = "listBox6";
+            listBox6.Size = new Size(130, 17);
+            listBox6.TabIndex = 86;
+            // 
+            // listBox7
+            // 
+            listBox7.Font = new Font("Candara", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            listBox7.FormattingEnabled = true;
+            listBox7.ItemHeight = 13;
+            listBox7.Location = new Point(183, 641);
+            listBox7.Name = "listBox7";
+            listBox7.Size = new Size(130, 17);
+            listBox7.TabIndex = 85;
+            // 
+            // listBox8
+            // 
+            listBox8.Font = new Font("Candara", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            listBox8.FormattingEnabled = true;
+            listBox8.ItemHeight = 13;
+            listBox8.Location = new Point(183, 667);
+            listBox8.Name = "listBox8";
+            listBox8.Size = new Size(130, 17);
+            listBox8.TabIndex = 87;
+            // 
+            // listBox9
+            // 
+            listBox9.Font = new Font("Candara", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            listBox9.FormattingEnabled = true;
+            listBox9.ItemHeight = 13;
+            listBox9.Location = new Point(421, 644);
+            listBox9.Name = "listBox9";
+            listBox9.Size = new Size(150, 17);
+            listBox9.TabIndex = 88;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(6F, 14F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(636, 701);
+            Controls.Add(listBox9);
+            Controls.Add(listBox8);
+            Controls.Add(listBox6);
+            Controls.Add(listBox7);
+            Controls.Add(listBox4);
+            Controls.Add(listBox5);
+            Controls.Add(listBox3);
+            Controls.Add(listBox2);
             Controls.Add(label40);
-            Controls.Add(totalOtherSchoolFeesTextBox);
-            Controls.Add(examBookletTextBox);
-            Controls.Add(ciscoLabFee2TextBox);
-            Controls.Add(computerLabFeeTextBox);
             Controls.Add(label36);
             Controls.Add(label37);
             Controls.Add(label38);
             Controls.Add(label39);
             Controls.Add(label35);
-            Controls.Add(totalTuitionFee);
             Controls.Add(label31);
-            Controls.Add(totalMisc);
-            Controls.Add(totalTuition);
-            Controls.Add(totalNum);
             Controls.Add(label32);
             Controls.Add(label33);
             Controls.Add(label34);
@@ -988,23 +1004,23 @@
         private Label label28;
         private Label label29;
         private Label label30;
-        private TextBox totalTuitionFee;
         private Label label31;
-        private TextBox totalMisc;
-        private TextBox totalTuition;
-        private TextBox totalNum;
         private Label label32;
         private Label label33;
         private Label label34;
         private Label label35;
-        private TextBox examBookletTextBox;
-        private TextBox ciscoLabFee2TextBox;
-        private TextBox computerLabFeeTextBox;
         private Label label36;
         private Label label37;
         private Label label38;
         private Label label39;
-        private TextBox totalOtherSchoolFeesTextBox;
         private Label label40;
+        private ListBox listBox2;
+        private ListBox listBox3;
+        private ListBox listBox4;
+        private ListBox listBox5;
+        private ListBox listBox6;
+        private ListBox listBox7;
+        private ListBox listBox8;
+        private ListBox listBox9;
     }
 }

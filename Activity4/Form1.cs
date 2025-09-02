@@ -62,14 +62,6 @@ namespace Activity4
             ciscoLabFeeTextBox.Text = "";
             examBookletFeeTextBox.Text = "";
             totalTuitionAndFeeTextBox.Text = "";
-            totalTuition.Text = "";
-            totalMisc.Text = "";    
-            totalNum.Text = "";
-            totalTuitionFee.Text = "";
-            computerLabFeeTextBox.Text = "";
-            ciscoLabFee2TextBox.Text = "";
-            examBookletTextBox.Text = "";
-            totalOtherSchoolFeesTextBox.Text = "";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -82,14 +74,13 @@ namespace Activity4
             creditUnitsListBox.Items.Add(creditUnitsTextBox.Text);
             timeListBox.Items.Add(timeTextBox.Text);
             dayListBox.Items.Add(dayTextBox.Text);
-
-            // Transfer data to other summary textboxes
-            totalTuitionFeeTextBox.Text = totalTuition.Text;
-            totalMiscFeeTextBox.Text = totalMisc.Text;
-            totalOtherSchoolFeesTextBox.Text = totalOtherSchoolFeesTextBox.Text;
-            computerLabFeeTextBox.Text = computerLabFeeTextBox.Text;
-            ciscoLabFeeTextBox.Text = ciscoLabFee2TextBox.Text;
-            examBookletFeeTextBox.Text = examBookletTextBox.Text;
+            listBox2.Items.Add(totalTuitionFeeTextBox.Text);
+            listBox3.Items.Add(totalMiscFeeTextBox.Text);
+            listBox4.Items.Add(totalTuitionAndFeeTextBox.Text);
+            listBox5.Items.Add(totalNumberUnitsTextBox.Text);
+            listBox6.Items.Add(laboratoryFeeTextBox.Text);
+            listBox7.Items.Add(ciscoLabFeeTextBox.Text);
+            listBox8.Items.Add(examBookletFeeTextBox.Text);
         }
     }
 }
