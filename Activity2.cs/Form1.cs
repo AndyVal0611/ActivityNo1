@@ -130,7 +130,6 @@ namespace Activity2.cs
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // EMPLOYEE DISC
             // Declaration of variables within a method of an object
             int qty;
             double discount_amt, discounted_amt, cash_rendered, change;
