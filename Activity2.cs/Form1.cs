@@ -8,25 +8,28 @@ namespace Activity2.cs
         {
             InitializeComponent();
         }
+        private int qty_total = 0;
+        private double discount_totalgiven = 0;
+        private double discounted_total = 0;
 
         private void Form1_Load(object sender, EventArgs e)
         {
             // codes for disabling the textboxes
-            itemnameTxtbox.Enabled = false;
-            priceTxtbox.Enabled = false;
-            discounted_txtbox.Enabled = false;
-            totalqty_txtbox.Enabled = false;
-            totaldiscg_txtbox.Enabled = false;
-            totaldiscamt_txtbox.Enabled = false;
-            changetxtbox.Enabled = false;
-            discount_txtbox.Enabled = false;
+            itemnameTxtbox.Enabled = true;
+            priceTxtbox.Enabled = true;
+            discounted_txtbox.Enabled = true;
+            totalqty_txtbox.Enabled = true;
+            totaldiscg_txtbox.Enabled = true;
+            totaldiscamt_txtbox.Enabled = true;
+            changetxtbox.Enabled = true;
+            discount_txtbox.Enabled = true;
 
             // codes for inserting pictures or image inside the picturebox tool
-            pictureBox20.Image = Image.FromFile(@"C:\Users\C203-38\source\repos\AndyVal0611\ActivityNo1\cake20.jpg");
-            pictureBox19.Image = Image.FromFile(@"C:\Users\C203-38\source\repos\AndyVal0611\ActivityNo1\cake19.jpg");
-            pictureBox18.Image = Image.FromFile(@"C:\Users\C203-38\source\repos\AndyVal0611\ActivityNo1\cake18.jpg");
-            pictureBox17.Image = Image.FromFile(@"C:\Users\C203-38\source\repos\AndyVal0611\ActivityNo1\cake17.jpg");
-            pictureBox16.Image = Image.FromFile(@"C:\Users\C203-38\source\repos\AndyVal0611\ActivityNo1\cake16.jpg");
+            pictureBox20.Image = Image.FromFile(@"C:\Users\andy1\source\repos\AndyVal0611\ActivityNo1\cake20.jpg");
+            pictureBox19.Image = Image.FromFile(@"C:\Users\andy1\source\repos\AndyVal0611\ActivityNo1\cake19.jpg");
+            pictureBox18.Image = Image.FromFile(@"C:\Users\andy1\source\repos\AndyVal0611\ActivityNo1\cake18.jpg");
+            pictureBox17.Image = Image.FromFile(@"C:\Users\andy1\source\repos\AndyVal0611\ActivityNo1\cake17.jpg");
+            pictureBox16.Image = Image.FromFile(@"C:\Users\andy1\source\repos\AndyVal0611\ActivityNo1\cake16.jpg");
 
             // codes for inserting name of the image inside the label tool
             name1lbl.Text = "Chocolate";
@@ -106,6 +109,27 @@ namespace Activity2.cs
 
         private void radioButton4_CheckedChanged(object sender, EventArgs e)
         {
+            // NO DISCOUNT
+            // Declaration of variables within a method of an object
+            int qty;
+            double price, discount_amt, discounted_amt;
+            // convert string
+            qty = Convert.ToInt32(qty_txtbox.Text);
+            price = Convert.ToDouble(priceTxtbox.Text);
+            // create a formula
+            discount_amt = (qty * price) * 0;
+            discounted_amt = (qty * price) - discount_amt;
+            // converting numeric data
+            discount_txtbox.Text = discount_amt.ToString("n");
+            discounted_txtbox.Text = discounted_amt.ToString("n");
+            // codes for unchecking the other radio buttons
+            radioButton2.Checked = false;
+            radioButton3.Checked = false;
+            radioButton1.Checked = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
             // EMPLOYEE DISC
             // Declaration of variables within a method of an object
             int qty;
@@ -123,36 +147,52 @@ namespace Activity2.cs
             discount_txtbox.Text = discount_amt.ToString("n");
             discounted_txtbox.Text = discounted_amt.ToString("n");
             // convert to string
-            totalqty_txtbox = qty_total.ToString();
-            totaldiscg_txtbox = qty
+            totalqty_txtbox.Text = qty_total.ToString();
+            totaldiscg_txtbox.Text = discount_totalgiven.ToString("n");
+            totaldiscamt_txtbox.Text = discounted_total.ToString("n");
+            changetxtbox.Text = change.ToString("n");
+            cashrendered_txtbox.Text = cash_rendered.ToString("n");
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
-            // Calculate
+            // Exit
+            this.Close();
         }
-        private void pictureBox1_Click(object sender, EventArgs e)
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            itemnameTxtbox.Clear();
+            priceTxtbox.Clear();
+            qty_txtbox.Clear();
+            discount_txtbox.Clear();
+            discounted_txtbox.Clear();
+            changetxtbox.Clear();
+            cashrendered_txtbox.Clear();
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
         {
             // Code for inserting or assigning a value to the Text property of a textbox
             itemnameTxtbox.Text = "Chocolate Cake";
             priceTxtbox.Text = "200.00";
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void pictureBox2_Click_1(object sender, EventArgs e)
         {
             // Code for inserting or assigning a value to the Text property of a textbox
             itemnameTxtbox.Text = "Oreo Cheesecake";
             priceTxtbox.Text = "220.00";
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
+        private void pictureBox3_Click_1(object sender, EventArgs e)
         {
             // Code for inserting or assigning a value to the Text property of a textbox
             itemnameTxtbox.Text = "Carrot Cake";
             priceTxtbox.Text = "180.00";
         }
 
-        private void pictureBox4_Click(object sender, EventArgs e)
+        private void pictureBox4_Click_1(object sender, EventArgs e)
         {
             // Code for inserting or assigning a value to the Text property of a textbox
             itemnameTxtbox.Text = "Chocolate Cheesecake";
@@ -269,23 +309,6 @@ namespace Activity2.cs
             // Code for inserting or assigning a value to the Text property of a textbox
             itemnameTxtbox.Text = "Lemon Cheesecake";
             priceTxtbox.Text = "240.00";
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            // Exit
-            this.Close();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            itemnameTxtbox.Clear();
-            priceTxtbox.Clear();
-            qty_txtbox.Clear();
-            discount_txtbox.Clear();
-            discounted_txtbox.Clear();
-            changetxtbox.Clear();
-            cashrendered_txtbox.Clear();
         }
     }
 }
