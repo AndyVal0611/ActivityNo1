@@ -14,7 +14,7 @@ namespace Activity2.cs
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // codes for disabling the textboxes
+            // codes for enabling the textboxes
             itemnameTxtbox.Enabled = true;
             priceTxtbox.Enabled = true;
             discounted_txtbox.Enabled = true;
